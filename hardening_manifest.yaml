@@ -1,0 +1,45 @@
+---
+apiVersion: v1
+
+# The repository name in registry1, excluding /ironbank/
+name: "opensource/python/python-pipenv/python39-pipenv"
+
+# List of tags to push for the repository in registry1
+# The most specific version should be the first tag and will be shown
+# on ironbank.dsop.io
+tags:
+- "2022.10.12"
+- "latest"
+
+# Build args passed to Dockerfile ARGs
+args:
+  BASE_IMAGE: "opensource/python/python39"
+  BASE_TAG: "v3.9.15"
+
+# Docker image labels
+labels:
+  org.opencontainers.image.title: "Python39 - Pipenv"
+  ## Human-readable description of the software packaged in the image
+  org.opencontainers.image.description: "Pipenv is a tool that aims to bring the best of all packaging worlds (bundler, composer, npm, cargo, yarn, etc.) to the Python world. Windows is a first-class citizen, in our world. This container has Python 3.9"
+  ## License(s) under which contained software is distributed
+  org.opencontainers.image.licenses: "MIT License"
+  ## URL to find more information on the image
+  org.opencontainers.image.url: "https://hub.docker.com/r/kennethreitz/pipenv/tags"
+  ## Name of the distributing entity, organization or individual
+  org.opencontainers.image.vendor: "pypi"
+  org.opencontainers.image.version: "2022.10.12"
+  ## Keywords to help with search (ex. "cicd,gitops,golang")
+  mil.dso.ironbank.image.keywords: "packaging,pip,installer"
+  ## This value can be "opensource" or "commercial"
+  mil.dso.ironbank.image.type: "opensource"
+  ## Product the image belongs to for grouping multiple images
+  mil.dso.ironbank.product.name: "Python-Pipenv"
+
+# List of resources to make available to the offline build context
+
+# List of project maintainers
+maintainers:
+- name: "Achsah Abraham"
+  username: "achsahabraham"
+  email: "ironbank@dsop.io"
+  cht_member: true
