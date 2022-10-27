@@ -8,7 +8,7 @@ name: "opensource/python/python-pipenv/python39-pipenv"
 # The most specific version should be the first tag and will be shown
 # on ironbank.dsop.io
 tags:
-- "2022.10.12"
+- "2022.10.25"
 - "latest"
 
 # Build args passed to Dockerfile ARGs
@@ -27,7 +27,7 @@ labels:
   org.opencontainers.image.url: "https://hub.docker.com/r/kennethreitz/pipenv/tags"
   ## Name of the distributing entity, organization or individual
   org.opencontainers.image.vendor: "pypi"
-  org.opencontainers.image.version: "2022.10.12"
+  org.opencontainers.image.version: "2022.10.25"
   ## Keywords to help with search (ex. "cicd,gitops,golang")
   mil.dso.ironbank.image.keywords: "packaging,pip,installer"
   ## This value can be "opensource" or "commercial"
