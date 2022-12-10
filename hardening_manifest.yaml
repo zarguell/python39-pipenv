@@ -14,7 +14,7 @@ tags:
 # Build args passed to Dockerfile ARGs
 args:
   BASE_IMAGE: "opensource/python/python39"
-  BASE_TAG: "v3.9.15"
+  BASE_TAG: "v3.9.16"
 
 # Docker image labels
 labels:
