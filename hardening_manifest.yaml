@@ -39,7 +39,11 @@ labels:
 
 # List of project maintainers
 maintainers:
-- name: "Achsah Abraham"
-  username: "achsahabraham"
-  email: "ironbank@dsop.io"
-  cht_member: true
+  - name: "Jacob Hanafin"
+    username: "hanafin.jacob"
+    email: "jacob.hanafin@sigmadefense.com"
+    cht_member: true
+  - name: "Marcus Montgomery"
+    email: "marcus.montgomery@sigmadefense.com"
+    username: "montgomery.marcus"
+    cht_member: true
