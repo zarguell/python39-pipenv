@@ -1,13 +1,13 @@
 {
   "assignees": [
-    "@achsahabraham"
+    "@hanafin.jacob",
+    "@montgomery.marcus"
   ],
   "baseBranches": [
     "development"
   ],
   "automerge": false,
   "groupName": "all dependencies",
-  "separateMajorMinor": false,
   "groupSlug": "all",
   "packageRules": [
     {
@@ -18,7 +18,29 @@
       "groupSlug": "all",
       "datasources": [
         "pypi"
-      ]
+      ],
+      "packageNames": [
+        "python"
+      ],
+      "separateMinorPatch": true,
+        "minor": {
+          "enabled": false
+        }
+    },
+    {
+      "datasources": [
+        "docker"
+      ],
+      "packageNames": [
+        "registry1.dso.mil/ironbank/opensource/python"
+      ],
+      "separateMinorPatch": true,
+      "minor": {
+        "enabled": false
+      },
+      "major": {
+        "enabled": false
+      }
     }
   ],
   "regexManagers": [
@@ -32,6 +54,17 @@
       ],
       "depNameTemplate": "pipenv",
       "datasourceTemplate": "pypi"
+    },
+    {
+      "fileMatch": [
+        "^hardening_manifest.yaml$"
+      ],
+      "matchStrings": [
+        "BASE_TAG:\\s+(\\s|\"|')?(?<currentValue>.+?)(\\s|\"|'|$)"
+      ],
+      "depNameTemplate": "registry1.dso.mil/ironbank/opensource/python",
+      "datasourceTemplate": "docker"
     }
   ]
 }
+
